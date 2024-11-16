@@ -1,6 +1,6 @@
 import random
 
-Tipp = {'wzfgzgegf7': 'bewfbuzfwbz', 'MacBook': 'laptop', 'MacOS': 'Apple Betriebssystem', 'Linux': 'Grundlage vieler Betriebssysteme', 'Holzdecke': 'Holz oben'}
+Tipp = {'Brot': 'Hartes Essen', 'MacBook': 'laptop', 'MacOS': 'Apple Betriebssystem', 'Linux': 'Grundlage vieler Betriebssysteme', 'Holzdecke': 'Holz oben'}
 Wörterbuch = list(Tipp.keys())
 
 def Galgenmännchen(geheimes_wort):
@@ -9,14 +9,14 @@ def Galgenmännchen(geheimes_wort):
     Tipp_anzeige = True
 
     print('Fals du Hilfe benötigt schreib Tipp')
-
+    
     while versuche > 0:
 
         print('Wort:',"".join(buchstabe if buchstabe.lower() in geratene_buchstaben
                               else'_'for buchstabe in geheimes_wort))
         print('versuche übrig:', versuche)
 
-        eingabe = input ('gib einen Buchstaben ein: ').lower()
+        eingabe = input('gib einen Buchstaben ein: ').lower()
 
         if eingabe == 'tipp': 
             print(chr(27) + "[2J")
