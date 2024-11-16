@@ -1,6 +1,6 @@
 Geheimezahl = 47
 Versuche = 3
-
+#Test 123
 while Versuche > 0:
     print('Errate die Zahl zwischen 1 und 100\nDu hast', str(Versuche) + ' Versuche')
     eingabe = input('Deine Eingabe: ')
