@@ -24,7 +24,7 @@ def Galgenmännchen(geheimes_wort):
     geratene_buchstaben = []
     Tipp_anzeige = True
 
-    print("Fals du Hilfe benötigt schreib Tipp")
+    print("Fals du Hilfe benötigt schreibe: Tipp um einen Hinweis zu erhalten")
 
     while versuche > 0:
 
